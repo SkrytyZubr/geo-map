@@ -20,7 +20,7 @@ os.makedirs("static/uploads", exist_ok=True)
 app.mount("/uploads", StaticFiles(directory="static/uploads"), name="uploads")
 
 # Konfiguracja Gemini
-api_key = "AIzaSyBHba-dRu1lSfHsm48HJvoBtCBwFNrWKbk"
+api_key = os.getenv("GEMINI_API_KEY")
 
 if api_key:
     genai.configure(api_key=api_key)
