@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* TWOJE GLOBALNE USTAWIENIA CZCIONKI */
+html {
+  font-size: 18px; 
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px; 
+  }
+}
